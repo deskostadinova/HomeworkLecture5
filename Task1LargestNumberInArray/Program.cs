@@ -1,31 +1,44 @@
 ﻿
-public class Task1LargestNumberInArray {
-    static int Largest(int[] arr) {
-        int max = arr[0];
+public class Task1LargestNumberInArray
+{
+    static int FindLargestNumber(int[] arrayOfNumbers)
+    {
+        int max = arrayOfNumbers[0];
 
-        for (int i = 1; i < arr.Count(); i++)
+        for (int i = 1; i < arrayOfNumbers.Length; i++)
         {
-            if (arr[i] > max)
+            if (arrayOfNumbers[i] > max)
             {
-                max = arr[i];
+                max = arrayOfNumbers[i];
             }
         }
-        return max;  
+        return max;
     }
-    static void Main() {
+
+    static void Main()
+    {
         Console.WriteLine("Enter an array of integers, separated by spaces:");
-        string input = Console.ReadLine();
-        
-        
-        if (string.IsNullOrWhiteSpace(input))
+        string userInput = Console.ReadLine();
+
+        if (string.IsNullOrWhiteSpace(userInput))
         {
             Console.WriteLine("The array is empty.");
         }
         else
         {
-            int[] arr = Array.ConvertAll(input.Split(), int.Parse);
-            Console.WriteLine(Largest(arr));
+            var parsedNumbers = userInput.Split()
+                .Where(x => int.TryParse(x, out _))
+                .Select(int.Parse)
+                .ToArray();
+                
+            if (parsedNumbers.Length == 0)
+            {
+                Console.WriteLine("No valid integers were entered.");
+            }
+            else
+            {
+                Console.WriteLine("The largest number is: " + FindLargestNumber(parsedNumbers));
+            }
         }
     }
 }
-
