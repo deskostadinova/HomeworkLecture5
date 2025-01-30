@@ -6,9 +6,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task2ReverseAString", "Task
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task3GenerateFibonacci", "Task3GenerateFibonacci\Task3GenerateFibonacci.csproj", "{A996035E-6F84-42F6-97B5-D6508CEAF267}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task4SortArray", "Task4SortArray\Task4SortArray.csproj", "{C1626C84-3AE0-4758-864C-4378F795D811}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task5SortArray", "Task5SortArray\Task5SortArray.csproj", "{C1626C84-3AE0-4758-864C-4378F795D811}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task5SwapTwoNumbers", "Task5SwapTwoNumbers\Task5SwapTwoNumbers.csproj", "{9258E19E-2B3E-40B6-8E65-EFA97ADF919D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task6SwapTwoNumbers", "Task6SwapTwoNumbers\Task6SwapTwoNumbers.csproj", "{9258E19E-2B3E-40B6-8E65-EFA97ADF919D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Task4PrimeNumbers", "Task4PrimeNumbers\Task4PrimeNumbers.csproj", "{2230ABF5-9279-48AE-BF3A-714CBDFF2B33}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -36,5 +38,9 @@ Global
 		{9258E19E-2B3E-40B6-8E65-EFA97ADF919D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9258E19E-2B3E-40B6-8E65-EFA97ADF919D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9258E19E-2B3E-40B6-8E65-EFA97ADF919D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2230ABF5-9279-48AE-BF3A-714CBDFF2B33}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2230ABF5-9279-48AE-BF3A-714CBDFF2B33}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2230ABF5-9279-48AE-BF3A-714CBDFF2B33}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2230ABF5-9279-48AE-BF3A-714CBDFF2B33}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
